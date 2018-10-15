@@ -12,11 +12,11 @@ This package implements a set of functions for transforming constrained random v
 5. `PDMatDistribution`: `Union{InverseWishart, Wishart}`, and
 6. `TransformDistribution`: `Union{T, Truncated{T}} where T<:ContinuousUnivariateDistribution`.
 
-All exported names from the [Distributions.jl](https://github.com/TuringLang/Bijectors.jl) package are reexported from `Bijectors`.
+All exported names from the [Distributions.jl](https://github.com/JuliaStats/Distributions.jl) package are reexported from `Bijectors`.
 
 ## Functions
 
-1. `link`: maps a sample of a random distribution `dist` from its support to a value in [`-Inf`, `Inf`]. Example:
+1. `link`: maps a sample of a random distribution `dist` from its support to a point in the Eucledian space. Example:
 
 ```julia
 julia> using Bijectors
